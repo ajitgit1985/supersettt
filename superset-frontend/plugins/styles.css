@@ -1,0 +1,56 @@
+/* Hierarchy Bar Chart */
+.hir_container {  
+    display: flex;
+    justify-content: end;
+    margin-bottom: 16px;
+}
+
+.hir_header_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+}
+
+.hir_header_text{
+    text-decoration-line: underline;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.hir_header_right_icons_container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.hir_header_alignment_btn{
+    width: 100%;
+    margin-right: 10px;
+    padding: 5px 6px;
+    font-size: 8px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+}
+button:focus { 
+    outline: none;
+}
+
+
+.hir_single_chart_header{
+    display: flex;
+    align-items: center;
+}
+
+.hir_single_chart_header_text{
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 3rem;
+}
+.hir_single_chart_year_text{
+    font-size: 14px;
+    font-weight: bold;
+}

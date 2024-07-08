@@ -1,0 +1,391 @@
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+// Index .less, any imports here will be included in the final css build ..Pragyan
+
+@import '~bootstrap/less/bootstrap.less';
+@import './fonts.less';
+@import './variables.less';
+@import './cosmo/bootswatch.less';
+
+html,
+body {
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+  background: #ebf4fb;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 1 auto;
+}
+
+#app {
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Custom CSS */
+body {
+    /*background: url(/static/assets/images/bg_blue.jpg), #fff;*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    // height: 100vh;
+}
+.row{height: inherit;}
+.container {
+    position: relative; height: 100%;
+}
+
+.top.menu-soi6ui .navbar-brand {
+    min-height: 59px;
+    max-width: 200px;
+    margin-top: -63px;
+}
+a.menu-1g7nyjy {
+    display: none;
+}
+div#app-menu {
+    position: relative;
+    background: #fff;
+}
+div#loginbox {
+    border: 0.5px solid #ccc;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+    padding: 5px 20px;
+    background: #fff;
+    margin-top: 100px !important;
+    // top: 45%;
+    // transform: translateY(-45%);
+}
+#loginbox .panel.panel-primary {
+    margin: 0 0 0.7rem;
+    padding-bottom: 0;
+}
+div#loginbox .panel-primary .panel-title {
+    font-weight: 600;
+    font-size: 23px;
+    text-align: center;
+    color: #2F91DF;
+    border-bottom: 1px solid #b5c7e7;
+}
+div#loginbox .panel-primary .panel-heading {
+    padding: 0px 15px;
+}
+div#loginbox .help-block {
+    color: #484848;
+}
+div#loginbox .control-label {
+    color: #333;
+}
+div#loginbox .input-group {
+    margin-bottom: 15px;
+}
+div#loginbox .input-group, div#loginbox input {
+    height: 45px;
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+div#loginbox .input-group-addon {
+    color: #05335e;
+    font-size: 20px;
+}
+div#loginbox .input-group .fa {
+    width: 20px;
+}
+div#loginbox input.btn.btn-primary.btn-block {
+    background: #2F91DF;
+    border: 1px solid #a3cdf2;
+    height: 45px;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 16px;
+}
+footer {
+    background-color: #0C7BD4;
+    padding: 0 25px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+footer:before {
+    content: '';
+    position: absolute;
+    top: -10px;
+    height: 5px;
+    width: 100%;
+    left: 0;
+    background: #F4A921;
+}
+
+ul.BI__logos {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+ul.BI__logos li {
+    padding: 3px 10px;
+    color: #fff;
+    text-align: center;
+    line-height: 1.5;
+}
+ul.BI__logos li p {
+    margin-bottom: 0.1rem;
+}
+/*After Login*/
+header.css-soi6ui .navbar-brand {
+    min-height: 59px;
+    max-width: 200px;
+    margin-top: -63px;
+}
+header.css-soi6ui {
+    margin-top: 0;
+    position: relative;
+    height: 60px;
+    background: #318cd5;
+}
+ul.ant-menu.ant-menu-light {
+    background: transparent;
+    padding-top: 4px;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+div#app {
+    background: transparent;
+    padding-bottom: 4.5rem;
+}
+.css-vhf0sc {
+    margin-bottom: 0px;
+    padding-bottom: 1rem;
+    background: #fff;
+}
+.ant-menu.ant-menu-horizontal > .ant-menu-item a {
+    color: #ffffff;
+    background: transparent;    
+}
+.ant-menu-submenu-title > span {
+    color: #fff;
+}
+.ant-menu-submenu-title span[role="img"] svg path {
+    fill: #fff !important;
+}
+.css-d1dar4 .fa.fa-plus.css-vv16tn {
+    color: #fff;
+}
+.ant-collapse-item {
+    background: #f0f5fa;
+    border-bottom: 1px solid #d8eef7 !important;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.11);
+    margin-bottom: 2rem;
+}
+.ant-row.menu .header {
+    padding: 10px 0 0 15px;
+    font-size: 17px;
+}
+.css-nfjnv9 .ant-collapse-item .ant-row.menu {
+    background: #f0f5fa;
+}
+.css-nfjnv9 .ant-row.menu:after {
+    border: 1px solid rgb(80 167 237) !important;
+}
+.css-vhf0sc .menu .ant-menu-item div.active a {
+    background: #318cd5 !important;
+    color: #fff;
+    font-size: 14px;
+}
+.ant-menu-item a:hover {
+    color: #1f8ae0;
+}
+.css-vhf0sc .menu .ant-menu-item div a {
+    font-size: 14px;
+}
+.ant-card-body {
+    border-bottom: 3px solid #f4a921;
+}
+.css-piata2 {
+    color: #318cd5 !important;
+}
+span.ant-tag.css-vv2kyi {
+    background: #fff2d8;
+}
+.ant-card.ant-card-bordered.css-1sred2u {
+    border-bottom: none !important;
+}
+.ant-card-meta-avatar {
+    color: #f4a921 !important;
+}
+.superset-button.css-1plyb0h {
+    background: #1f8ae0;
+}
+.superset-button.css-1plyb0h:hover {
+    background: #0c6ab5;
+}
+.superset-button.css-10t0a4g {
+    color: #0C7BD4;
+    background-color: #f0f5fa;
+}
+.superset-button.css-10t0a4g:hover {
+    color: #318cd5;
+    background: #d4ecff;
+}
+.css-auk1s1 .superset-list-view {
+    background: #f6f8f9;
+}
+.css-auk1s1 .superset-list-view .header {
+    background: #e6f0f8;
+    padding: 10px;
+    border-bottom: 2px solid #b1cade;
+    box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.05);
+}
+.css-nonwsj .toggle-button.active {
+    background-color: #318cd5;
+}
+.controls label.css-6bztgs {
+    color: #11609f;
+    font-weight: 500;
+}
+ul.css-vv8cna li.active span {
+    background-color: #318cd5;
+}
+.btn-primary, .css-z1d1fr {
+    background-color: #318cd5 !important;
+    border-color: #318cd5 !important;
+}
+.btn-primary:hover, .css-z1d1fr:hover {
+    background-color: #0c6ab5 !important;
+    border-color: #0a60a5 !important;
+    color: #fff;
+}
+.table-responsive a {
+    color: #11609f;
+}
+.text-primary, .text-primary:hover {
+    color: #318cd5;
+}
+.panel.panel-primary {
+    padding: 1rem 0 3rem;
+    margin: 1rem 0 5.5rem;
+}
+.titleRow .css-1vz7eed-Label {
+    background: #fbf0c8;
+}
+header {
+    flex: 0 1 auto;
+    box-shadow: rgb(224, 224, 224) 0px -1px 0px inset, rgb(224, 224, 224) 0px 0px 55px;
+    padding: 0px 0;
+    border-top: 3px solid #7ec4fb;
+    height: 75px;
+}
+header#main-menu {
+    position: relative;
+    height: 60px;
+    background: #318cd5;
+}
+.ant-menu-submenu-title .menu-vv16tn {
+    color: #fff;
+}
+.css-jign52-button+.superset-button {
+    background-color: #318cd5 !important;
+    border-color: #318cd5 !important;
+}
+.css-jign52-button+.superset-button:hover {
+    background-color: #0c6ab5 !important;
+    border-color: #0a60a5 !important;
+    color: #fff;
+}
+.ant-btn.css-jign52-button {
+    color: #0c6ab5;
+    background-color: #e7f2fb;
+}
+.ant-btn.css-jign52-button:hover{
+    background-color: #d7edff;
+}
+
+.top_header {
+    padding: 0.5rem;
+    background-color:#fff;
+}
+.top_header .row{
+    display: flex;
+    align-items: center;
+}
+.DVP_img {
+    text-align: center;
+    color: #2a89d6;
+    font-size: 31px;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.ceda_logo {
+    display: flex;
+    justify-content: flex-end;
+}
+.ceda_logo img{height: 47px;}
+.row.footer_row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.nicsi_logo {
+  position: absolute;
+  right: -10px;
+}
+.nicsi_logo img{ height: 32px;}
+.App.SqlLab.css-h4di2h {
+    bottom: 4.5rem;
+}
+
+/*Responsive css*/
+@media screen and (max-width:1024px){ 
+    .DVP_img{font-size: 27px;}
+}
+@media screen and (max-width:767px){ 
+    .top_header .row { flex-direction: column;}
+    header.css-soi6ui .navbar-brand, .top.menu-soi6ui .navbar-brand{margin-top: -60px;}
+    .css-soi6ui .navbar-brand, .top.menu-soi6ui .navbar-brand {float: left;}
+    .css-soi6ui .navbar-brand img, .top.menu-soi6ui .navbar-brand img{height: 41px;}
+    .DVP_img{
+        margin-bottom: 0.7rem;
+        border-bottom: 1px solid #eeecec;
+    }
+    .ceda_logo img {height: 39px;}
+    div#loginbox{margin: 0 10%;}
+    ul.ant-menu.ant-menu-light{
+        display: flex;
+        align-items: center;
+    }
+    .ant-menu-item a { color: #fff;}
+    ul.BI__logos{padding-left: 0;}
+    ul.BI__logos li{ text-align: left; line-height: 1.5;}
+    footer{padding: 0;}
+    .nicsi_logo{right: 13px;}
+}
+@media screen and (max-width:425px){ 
+    div#loginbox{margin: 0;}
+    .DVP_img{font-size: 21px;}
+}

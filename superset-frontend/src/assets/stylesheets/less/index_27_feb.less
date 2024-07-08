@@ -1,0 +1,612 @@
+/**
+ * Licensed to the Apache Software Foundation (ASF) under one
+ * or more contributor license agreements.  See the NOTICE file
+ * distributed with this work for additional information
+ * regarding copyright ownership.  The ASF licenses this file
+ * to you under the Apache License, Version 2.0 (the
+ * "License"); you may not use this file except in compliance
+ * with the License.  You may obtain a copy of the License at
+ *
+ *   http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing,
+ * software distributed under the License is distributed on an
+ * "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY
+ * KIND, either express or implied.  See the License for the
+ * specific language governing permissions and limitations
+ * under the License.
+ */
+// Index .less, any imports here will be included in the final css build
+
+@import '~bootstrap/less/bootstrap.less';
+@import './fonts.less';
+@import './variables.less';
+@import './cosmo/bootswatch.less';
+// @import '../../../../../superset/static/assets/css/style.css';
+
+html,
+body {
+  font-size: @font-size-base;
+  line-height: @line-height-base;
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex: 0 1 auto;
+}
+
+#app {
+  flex: 1 1 auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+
+// Custom CSS
+.top_header {
+  position: relative;
+  padding: 0.5rem 0;
+  margin: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
+.top_header .row {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.DVP_img {
+  text-align: center;
+  height: auto;
+}
+
+.ceda_logo {
+  text-align: right;
+}
+
+.ceda_logo img {
+  height: 47px;
+}
+
+.row.footer_row {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.nicsi_logo {
+  position: absolute;
+  right: -10px;
+}
+
+.nicsi_logo img {
+  height: 32px;
+}
+
+
+
+
+/* Custom CSS */
+body {
+  // background: url(/static/assets/images/bg_blue.jpg), #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background: #e0f0ff;
+}
+
+div#loginbox .panel-primary .panel-title {
+  font-weight: 600;
+  font-size: 23px;
+  text-align: center;
+  color: #2F91DF;
+  border-bottom: 1px solid #b5c7e7;
+}
+
+div#loginbox .panel-primary .panel-heading {
+  padding: 0px 15px;
+}
+
+.top.menu-soi6ui .navbar-brand {
+  min-height: 69px;
+  max-width: 285px;
+  margin-top: -68px;
+}
+
+a.menu-1g7nyjy {
+  display: none;
+}
+
+div#app-menu {
+  position: relative;
+  background: #fff;
+}
+
+div#loginbox {
+  border: 0.5px solid #ccc;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 5px 20px;
+  background: #fff;
+  transform: translateY(25%);
+}
+
+div#loginbox .help-block {
+  color: #484848;
+}
+
+div#loginbox .control-label {
+  color: #333;
+}
+
+div#loginbox .input-group {
+  margin-bottom: 15px;
+}
+
+div#loginbox .input-group,
+div#loginbox input {
+  height: 45px;
+  border-top-right-radius: 7px;
+  border-bottom-right-radius: 7px;
+}
+
+div#loginbox .input-group-addon {
+  color: #05335e;
+  font-size: 20px;
+}
+
+div#loginbox .input-group .fa {
+  width: 20px;
+}
+
+div#loginbox input.btn.btn-primary.btn-block {
+  background: #2F91DF;
+  border: 1px solid #a3cdf2;
+  height: 45px;
+  border-radius: 7px;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+footer {
+  background-color: #0C7BD4;
+  padding: 0 20px;
+  // position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+footer:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  height: 5px;
+  width: 100%;
+  left: 0;
+  background: #F4A921;
+}
+
+footer:after {
+  position: absolute;
+  // background-image: url(/static/assets/images/nicsi_logo_white.svg);
+  content: "";
+  -moz-transition: 250ms ease-in;
+  -webkit-transition: 250ms ease-in;
+  -ms-transition: 250ms ease-in;
+  transition: 250ms ease-in;
+  height: 41px;
+  width: 115px;
+  right: 21px;
+  top: 8px;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+ul.BI__logos {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0;
+  list-style-type: none;
+}
+
+ul.BI__logos li {
+  padding: 3px 10px;
+  color: #fff;
+  text-align: center;
+  line-height: 1.5;
+}
+
+ul.BI__logos li p {
+  margin-bottom: 0.1rem;
+}
+
+/*After Login*/
+header.css-soi6ui .navbar-brand {
+  min-height: 69px;
+  max-width: 285px;
+  margin-top: -68px;
+}
+
+header.css-soi6ui {
+  position: relative;
+  height: 60px;
+  background: #318cd5;
+}
+
+ul.ant-menu.ant-menu-light {
+  background: transparent;
+  padding-top: 4px;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+header:after {
+  position: absolute;
+  // background-image: url(/static/assets/images/ceda_logo.png);
+  content: "";
+  -moz-transition: 250ms ease-in;
+  -webkit-transition: 250ms ease-in;
+  -ms-transition: 250ms ease-in;
+  transition: 250ms ease-in;
+  right: 21px;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 51px;
+  width: 135px;
+  top: -59px;
+}
+
+header#main-menu:before {
+  content: '';
+  // background-image: url(/static/assets/images/Data-Visualisations-Platform.svg);
+  height: 35px;
+  position: absolute;
+  left: 50%;
+  top: -51px;
+  transform: translate(-50%, 0%);
+  width: 375px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  z-index: 99;
+}
+
+body .container {
+  height: 100%;
+}
+
+div#app {
+  background: #fff;
+}
+
+.ant-menu.ant-menu-horizontal>.ant-menu-item a {
+  color: #ffffff;
+  background: transparent;
+}
+
+.ant-menu-submenu-title>span {
+  color: #fff;
+}
+
+.ant-menu-submenu-title span[role="img"] svg path {
+  fill: #fff !important;
+}
+
+.css-d1dar4 .fa.fa-plus.css-vv16tn {
+  color: #fff;
+}
+
+.ant-collapse-item {
+  background: #f0f5fa;
+  border-bottom: 1px solid #d8eef7 !important;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.11);
+  margin-bottom: 2rem;
+}
+
+.ant-row.menu .header {
+  padding: 10px 0 0 15px;
+  font-size: 17px;
+}
+
+.css-nfjnv9 .ant-collapse-item .ant-row.menu {
+  background: #f0f5fa;
+}
+
+.css-nfjnv9 .ant-row.menu:after {
+  border: 1px solid rgb(80 167 237) !important;
+}
+
+.css-vhf0sc .menu .ant-menu-item div.active a {
+  background: #318cd5 !important;
+  color: #fff;
+  font-size: 14px;
+}
+
+.ant-menu-item a:hover {
+  color: #1f8ae0;
+}
+
+.css-vhf0sc .menu .ant-menu-item div a {
+  font-size: 14px;
+}
+
+.ant-card-body {
+  border-bottom: 3px solid #f4a921;
+}
+
+.css-piata2 {
+  color: #318cd5 !important;
+}
+
+span.ant-tag.css-vv2kyi {
+  background: #fff2d8;
+}
+
+.ant-card.ant-card-bordered.css-1sred2u {
+  border-bottom: none !important;
+}
+
+.ant-card-meta-avatar {
+  color: #f4a921 !important;
+}
+
+.superset-button.css-1plyb0h {
+  background: #1f8ae0;
+}
+
+.superset-button.css-1plyb0h:hover {
+  background: #0c6ab5;
+}
+
+.superset-button.css-10t0a4g {
+  color: #0C7BD4;
+  background-color: #f0f5fa;
+}
+
+.superset-button.css-10t0a4g:hover {
+  color: #318cd5;
+  background: #d4ecff;
+}
+
+.css-auk1s1 .superset-list-view {
+  background: #f6f8f9;
+}
+
+.css-auk1s1 .superset-list-view .header {
+  background: #e6f0f8;
+  padding: 10px;
+  border-bottom: 2px solid #b1cade;
+  box-shadow: 0px 0px 17px rgba(0, 0, 0, 0.05);
+}
+
+.css-nonwsj .toggle-button.active {
+  background-color: #318cd5;
+}
+
+.controls label.css-6bztgs {
+  color: #11609f;
+  font-weight: 500;
+}
+
+ul.css-vv8cna li.active span {
+  background-color: #318cd5;
+}
+
+.btn-primary,
+.css-z1d1fr {
+  background-color: #318cd5 !important;
+  border-color: #318cd5 !important;
+}
+
+.btn-primary:hover,
+.css-z1d1fr:hover {
+  background-color: #0c6ab5 !important;
+  border-color: #0a60a5 !important;
+  color: #fff;
+}
+
+.table-responsive a {
+  color: #11609f;
+}
+
+.text-primary,
+.text-primary:hover {
+  color: #318cd5;
+}
+
+.panel.panel-primary {
+  padding-top: 1rem;
+  margin-top: 1rem;
+}
+
+header {
+  flex: 0 1 auto;
+  // box-shadow: rgb(224, 224, 224) 0px -1px 0px inset, rgb(224, 224, 224) 0px 0px 55px;
+  padding: 0px 0;
+  border-top: 3px solid #7ec4fb;
+  height: 75px;
+}
+
+header#main-menu {
+  // margin-top: 5rem;
+  position: relative;
+  height: 60px;
+  background: #318cd5;
+}
+
+.ant-menu-submenu-title .menu-vv16tn {
+  color: #fff;
+}
+
+.country_map button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  /*background-image: url(/static/assets/images/india.png);*/
+}
+
+.country_map {
+  padding-top: 100px;
+}
+
+.tooltip {
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.9);
+  // background-image: linear-gradient(45deg, orange, white, green);
+  border: 1px solid #ccc;
+  padding: 8px;
+  border-radius: 4px;
+  pointer-events: none;
+  /* Ensure tooltip doesn't interfere with interactions */
+  font-size: 14px;
+  z-index: 999;
+  /* Ensure tooltip is displayed above other elements */
+  // height: 120px; /* Set the height */
+  // width: 210px; /* Set the width */
+  box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.2);
+  /* Add a subtle box shadow */
+}
+
+// .list-group-item {} .list-group-item div {
+//   display: flex;
+//   align-items: center;
+// }
+// .list-group-item div::before {
+//   content: '';
+//   flex: 1;
+//   height: 5px;
+//   background: linear-gradient(to right, #2c7bb6, #00a6ca,#00ccbc,#90eb9d,#ffff8c,
+//             #f9d057,#f29e2e,#e76818,#d7191c);
+//   margin-right: 1em;
+//}
+// 
+// csss color box legend 
+/* CSS Styles */
+// .legend-container {
+//   display: flex;
+//   flex-direction: row;
+//   align-items: center;
+//   gap: 10px; /* Adjust the gap as needed */
+// }
+
+// .legend-box {
+//   width: 30px;
+//   height: 20px;
+// }
+
+// .legend-label {
+//   font-size: 14px; /* Adjust the font size as needed */
+// }
+
+.modal-body1 {
+  position: absolute;
+  top: 0;
+  left: 50px;
+  // background: linear-gradient(to right, #2c7bb6, #00a6ca,#00ccbc,#90eb9d,#ffff8c, #f9d057,#f29e2e,#e76818,#d7191c);
+  z-index: 999;
+  height: 15px;
+  width: 50%;
+  font-weight: bold;
+}
+
+.modal-body1::before {
+  content: 'Min';
+  position: absolute;
+  left: -30px;
+  bottom: -2px;
+}
+
+.modal-body1::after {
+  content: 'Max';
+  position: absolute;
+  right: -30px;
+  bottom: -2px;
+}
+
+/* Additional styles for the class used to toggle pseudo-elements and styles */
+.modal-body1.gradient-background::before,
+.modal-body1.gradient-background::after {
+  content: none;
+  /* Hide the pseudo-elements when the class is added */
+}
+
+.legend-item-container {
+  display: flex;
+}
+
+span.legend-label {
+  margin-left: 10px;
+}
+
+/*Responsive css*/
+@media screen and (max-width:1024px) {
+  header#main-menu:before {
+    width: 315px;
+    transform: translate(-47%, 0%);
+  }
+
+  .top.menu-soi6ui .navbar-brand {
+    min-height: 55px;
+    max-width: 182px;
+    margin-top: -65px;
+  }
+
+  header:after {
+    width: 115px;
+    top: -56px;
+  }
+
+  div#loginbox {
+    margin-top: 0 !important;
+  }
+}
+
+@media screen and (max-width:767px) {
+  header#main-menu {
+    margin-top: 4rem;
+  }
+
+  .top.menu-soi6ui .navbar-brand {
+    min-height: 50px;
+    max-width: 148px;
+    margin-top: -56px;
+  }
+
+  header:after {
+    width: 95px;
+    height: 34px;
+    top: -47px;
+  }
+
+  header#main-menu:before {
+    width: 275px;
+    top: -41px;
+    height: 25px;
+  }
+
+  ul.BI__logos {
+    justify-content: flex-start;
+    padding-left: 0;
+  }
+
+  ul.BI__logos li p {
+    text-align: left;
+  }
+
+  footer {
+    padding: 0;
+  }
+}
+
+/*@media screen and (max-width:540px){
+header#main-menu { margin-top: 7rem;}
+.top.menu-soi6ui .navbar-brand{margin-top: -99px;}
+header:after{top: -90px;}
+}*/
