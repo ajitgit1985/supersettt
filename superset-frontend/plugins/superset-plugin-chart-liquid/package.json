@@ -42,7 +42,7 @@
     "react": "^16.13.1"
   },
   "devDependencies": {
-    "@airbnb/config-babel": "^2.0.1",
+    "@airbnb/config-babel": "^3.1.0",
     "@babel/cli": "^7.16.0",
     "@types/jest": "^26.0.4",
     "jest": "^26.6.3",
