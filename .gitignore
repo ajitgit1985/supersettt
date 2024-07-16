@@ -116,5 +116,5 @@ messages.mo
 # nicsi_custom_code, Ignore Superset chunk files 
 superset/static/assets/*.chunk.js
 superset/static/assets/manifest.json
-
+superset/static/assets/.chunk.js
 cache/
