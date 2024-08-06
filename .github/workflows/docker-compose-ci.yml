@@ -1,0 +1,49 @@
+name: Docker Compose CI
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: [self-hosted, linux]  # Use your self-hosted runner
+
+    services:
+      docker:
+        image: docker:20.10-dind
+        options: --privileged
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Docker Buildx
+      uses: docker/setup-buildx-action@v2
+
+    - name: Cache Docker layers
+      uses: actions/cache@v3
+      with:
+        path: /tmp/.buildx-cache
+        key: ${{ runner.os }}-docker-${{ github.sha }}
+        restore-keys: |
+          ${{ runner.os }}-docker-
+
+    - name: Build Docker images
+      run: |
+        docker-compose -f docker-compose.yml build
+
+    - name: Start Docker Compose services
+      run: |
+        docker-compose -f docker-compose.yml up -d
+
+    - name: Run tests
+      run: |
+        docker-compose -f docker-compose.yml exec -T superset-tests-worker pytest
+
+    - name: Clean up
+      run: |
+        docker-compose -f docker-compose.yml down
