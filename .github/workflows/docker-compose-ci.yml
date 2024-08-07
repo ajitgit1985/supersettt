@@ -20,8 +20,9 @@ jobs:
 
           # Build the Docker containers from the Dockerfile(s)
           docker-compose -f docker-compose.yml build
+          
+          docker-compose -f docker-compose.yml down
+          
           docker-compose -f docker-compose.yml up -d
 
-          # Optional: Start the containers
-          # docker-compose -f docker-compose.yml down
-        
+         
