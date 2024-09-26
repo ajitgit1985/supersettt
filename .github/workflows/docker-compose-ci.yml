@@ -15,7 +15,7 @@ jobs:
 
       - name: Build Docker containers
         run: |
-          # Navigate to the application directory
+          # Navigate to the application director
           cd /home/sambhav/Downloads/superset-master
 
           # Build the Docker containers from the Dockerfile(s)
