@@ -13,20 +13,26 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
 
-     
-        
-        
-      
+      - name: Set up Docker
+        run: |
+          # Ensure Docker is running and available
+          docker --version
+
       - name: Build Docker containers
         run: |
           # Navigate to the application directory
-          cd /home/sambhav/Downloads/superset-master
+          cd /home/ubuntu/supersettt
 
           # Build the Docker containers from the Dockerfile(s)
           docker-compose -f docker-compose.yml build
-          
+
+          # Stop and remove any running containers
           docker-compose -f docker-compose.yml down
-          
+
+          # Start the containers in detached mode
           docker-compose -f docker-compose.yml up -d
 
-         
+      - name: Verify Deployment
+        run: |
+          # Optionally, you can check if the application is running
+          curl -f http://localhost:your_port || (echo "Application not running" && exit 1)
