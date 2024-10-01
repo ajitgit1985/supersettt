@@ -40,4 +40,4 @@ jobs:
       - name: Verify Deployment
         run: |
           # Optionally, you can check if the application is running
-          curl -f http://localhost:your_port || (echo "Application not running" && exit 1)
+          curl -f http://127.0.0.1 || (echo "Application not running" && exit 1)
