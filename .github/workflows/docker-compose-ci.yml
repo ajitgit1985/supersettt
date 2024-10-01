@@ -20,7 +20,7 @@ jobs:
 
       - name: Set up Docker
         run: |
-          # Ensure Docker is running and available
+          # Ensure Docker is running and availablee
           docker --version
 
       - name: Build Docker containers
