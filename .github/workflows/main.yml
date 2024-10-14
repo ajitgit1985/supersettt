@@ -55,7 +55,7 @@ jobs:
         username: ${{ secrets.DOCKER_USERNAME }}
         password: ${{ secrets.DOCKER_PASSWORD }}
 
-    - name: Deploy to environment
+    - name: Deploy to environmentt
       run: |
         docker-compose -f docker-compose.yml pull
         docker-compose -f docker-compose.yml up -d
