@@ -2,21 +2,21 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   labels:
-    app: vote
-  name: vote
+    app: superset
+  name: superset
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app: vote
+      app: superset
   template:
     metadata:
       labels:
-        app: vote
+        app: superset
     spec:
       containers:
       - image: apache/superset
-        name: vote
+        name: superset
         ports:
         - containerPort: 8088
-          name: vote
+          name: superset
