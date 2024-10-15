@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  labels:
+    app: sambhav
+  name: sambhav
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: sambhav
+  template:
+    metadata:
+      labels:
+        app: sambhav
+    spec:
+      containers:
+      - image: devopsajit85/sambhavvv-app
+        name: sambhav
+        ports:
+        - containerPort: 80
+          name: sambhav
