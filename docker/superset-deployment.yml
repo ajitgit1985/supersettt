@@ -1,22 +1,17 @@
-apiVersion: apps/v1
-kind: Deployment
+apiVersion: v1
+kind: Service
 metadata:
   labels:
     app: superset
+    app.kubernetes.io/instance: superset2
   name: superset
+  namespace: default
 spec:
-  replicas: 1
+  ports:
+    - name: superset-service
+      nodePort: 31000
+      port: 8088
+      targetPort: 80
   selector:
-    matchLabels:
-      app: superset
-  template:
-    metadata:
-      labels:
-        app: superset
-    spec:
-      containers:
-      - image: apache/superset
-        name: superset
-        ports:
-        - containerPort: 80
-          name: superset
+    app: superset
+  type: NodePort
