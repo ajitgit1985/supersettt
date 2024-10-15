@@ -8,8 +8,8 @@ spec:
   type: NodePort
   ports:
   - name: "superset-service"
-    port: 5000
-    targetPort: 8088
+    port: 8088
+    targetPort: 80
     nodePort: 31000
   selector:
     app: superset
