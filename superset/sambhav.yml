@@ -14,8 +14,8 @@ spec:
     spec:
       containers:
       - name: superset
-        image: apachesuperset.docker.scarf.sh/apache/superset:latest-dev
-        command: ["/app/docker/docker-bootstrap.sh", "app"]
+        image: apache/superset:latest-dev
+        
         ports:
         - containerPort: 8088
         env:
