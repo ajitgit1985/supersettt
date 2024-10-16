@@ -5,7 +5,7 @@ metadata:
     app: sambhav
   name: sambhav
 spec:
-  replicas: 1
+  replicas: 2
   selector:
     matchLabels:
       app: sambhav
