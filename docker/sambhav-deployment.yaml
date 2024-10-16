@@ -19,4 +19,16 @@ spec:
         name: sambhav
         ports:
         - containerPort: 80
-          name: sambhav
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: sambhav-service
+spec:
+  selector:
+    app: sambhav
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer  # Change to ClusterIP or NodePort depending on your setup
