@@ -17,7 +17,7 @@ spec:
     spec:
       containers:
         - name: superset
-          image: devopsajit85/superset  # Replace with your actual image name
+          image: apache/superset  # Replace with your actual image name
           ports:
             - containerPort: 8088  # Port that Superset is exposed on
           env:
