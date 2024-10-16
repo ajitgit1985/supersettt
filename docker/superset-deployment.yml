@@ -1,17 +1,33 @@
-apiVersion: v1
-kind: Service
+apiVersion: apps/v1
+kind: Deployment
 metadata:
-  labels:
-    app: superset
-    app.kubernetes.io/instance: superset2
   name: superset
   namespace: default
-spec:
-  ports:
-    - name: superset-service
-      nodePort: 31000
-      port: 8088
-      targetPort: 80
-  selector:
+  labels:
     app: superset
-  type: NodePort
+spec:
+  replicas: 2  # Number of replicas
+  selector:
+    matchLabels:
+      app: superset
+  template:
+    metadata:
+      labels:
+        app: superset
+    spec:
+      containers:
+        - name: superset
+          image: devopsajit85/superset  # Replace with your actual image name
+          ports:
+            - containerPort: 8088  # Port that Superset is exposed on
+          env:
+            - name: SUPERSET_DATABASE_URI
+              value: "sqlite:////app/superset/superset.db"  # Example database URI
+            # Add any additional environment variables needed for your application
+          resources:  # Optional resource requests/limits
+            requests:
+              memory: "256Mi"
+              cpu: "250m"
+            limits:
+              memory: "512Mi"
+              cpu: "500m"
