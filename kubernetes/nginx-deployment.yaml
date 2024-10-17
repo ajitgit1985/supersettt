@@ -2,13 +2,11 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: nginx-deployment
-  labels:
-    app: nginx
 spec:
-  replicas: 3  # Number of NGINX replicas
   selector:
     matchLabels:
       app: nginx
+  replicas: 2 # tells deployment to run 2 pods matching the template
   template:
     metadata:
       labels:
@@ -16,13 +14,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: nginx:latest  # NGINX image
+        image: nginx:1.14.2
         ports:
-        - containerPort: 80  # Port on which NGINX listens
-        volumeMounts:
-        - name: nginx-config
-          mountPath: /etc/nginx/conf.d  # Mount path for NGINX configuration
-      volumes:
-      - name: nginx-config
-        configMap:
-          name: nginx-config  # Reference to the ConfigMap for custom configuration
+        - containerPort: 80
