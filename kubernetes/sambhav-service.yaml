@@ -8,7 +8,7 @@ spec:
   type: NodePort
   ports:
   - name: "sambhav-service"
-    port: 8088
+    port: 3000
     targetPort: 80
     nodePort: 31001
   selector:
