@@ -3,7 +3,9 @@ kind: Deployment
 metadata:
   labels:
     app: sambhav
+    app.kubernetes.io/instance: sambhav
   name: sambhav
+  namespace: default
 spec:
   replicas: 1
   selector:
@@ -15,8 +17,8 @@ spec:
         app: sambhav
     spec:
       containers:
-      - image: devopsajit85/sambhavvv-app
-        name: sambhav
-        ports:
-        - containerPort: 80
+        - image: devopsajit85/sambhavvv-app
           name: sambhav
+          ports:
+            - containerPort: 80
+              name: sambhav
