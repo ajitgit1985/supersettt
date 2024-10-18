@@ -1,0 +1,15 @@
+apiVersion: v1
+kind: Service
+metadata:
+  labels:
+    app: superset
+  name: superset
+spec:
+  type: NodePort
+  ports:
+  - name: "superset-service"
+    port: 8088
+    targetPort: 80
+    nodePort: 31001
+  selector:
+    app: superset
