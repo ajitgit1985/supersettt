@@ -15,7 +15,7 @@ spec:
         app: superset
     spec:
       containers:
-      - image: dockersamples/examplevotingapp_result
+      - image: apache/superset
         name: superset
         ports:
         - containerPort: 80
